@@ -1,0 +1,315 @@
+*{
+    margin: 0px;
+    font-family: Arial;
+    border: border-box;
+}
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-logo{
+    height: 50px;
+    width: 100px;
+}
+.logo1{
+    background-image: url("download.jpg");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+/**box2 */
+.add-first{
+    color: #cccccc;
+    font: 0.85rem;
+    margin-left: 15px;
+}
+.add-second{
+    font: 1rem;
+    margin-left: 3px;
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+/*box3*/
+.nav-search{
+ display: flex;
+ justify-content: space-evenly;
+ background-color: orange;
+ width: 620px;
+height: 40px;
+border-radius: 4px;
+}
+.nav-search:hover{
+  border: 2px solid orange;  
+}
+.search-select{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border: none;
+}
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #0f1111;
+}
+/*box 4*/
+span{
+    font-size: 0.7rem;
+}
+.nav-sec{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+/*box 5*/
+.nav-cart i {
+    font-size: 30px;
+}
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+/*panel*/
+.panel{
+    height: 39px;
+    color: white;
+    background-color: #222f3d;
+    display: flex;
+    align-items: center;
+    
+}
+.panel-opps p{
+    width: 90%;
+    display: inline;
+    align-items: center;
+    font-size: 0.85rem;
+    margin-left: 10px;
+}
+.panel-all{
+    width: 5%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+/*hero*/
+.hero-section{
+    background-image: url("hero.jpg");
+    background-size: cover;
+    height: 500px;
+}
+/*shop*/
+.shop-section{
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #f3e4e4;
+}
+.box{ 
+    height: 370px;
+    /*border: 2px solid black;*/
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+    box-sizing: border-box;
+    overflow:hidden;
+}
+.box-image{
+    height: 300px;
+    background-image: cover;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box-content p{
+    color: #007185;
+    margin: 0;
+}
+.box-content h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+/*footer*/
+footer{
+    margin-top: 15px;
+}
+.panel-1{
+    height: 49px;
+    width: 100%;
+    background-color: #37475a;
+    color: white;
+    font-family: Arial;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel-2{
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul {
+    margin-top: 50px;
+}
+ul a{
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
+/*panel3*/
+.panel-3{
+    background-color:#222f3d ;
+    border-top: 0.5px solid #6e7277 ;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    background-image: url("download.jpg");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+/*panel4*/
+.panel-4{
+    background-color:#131A22;
+    color: white;
+    height: 70px;
+    text-align: center;
+    font: 0.7rem; 
+    padding-top: 20px;
+}
+.copy-right{
+    padding-top: 5px;
+}
+
+/* For screens with width of 757px and height of 668px */
+@media only screen and (max-width: 757px) and (min-height: 668px) {
+    /* Navbar adjustments */
+    .navbar {
+        flex-wrap: wrap; /* Allow navbar items to wrap to new lines */
+        justify-content: center; /* Center items on smaller screens */
+        padding: 10px;
+    }
+
+    /* Make logo, address, search, sign-in, and other elements responsive */
+    .nav-logo, .nav-address, .nav-search, .sign-in, .return, .nav-cart {
+        width: 100%; /* Full-width for all navbar items */
+        text-align: center; /* Center text in these items */
+        margin: 5px 0;
+    }
+
+    .nav-search {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .search-input {
+        width: 85%;
+    }
+
+    .search-icon {
+        width: 10%; /* Adjust the search icon width */
+    }
+
+    /* Smaller text in the navbar items */
+    .sign-in, .return, .nav-cart {
+        font-size: 0.75rem;
+    }
+
+    /* Box section adjustments */
+    .shop-section {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+    
+    .box {
+        width: 100%; /* Full-width boxes */
+        margin: 10px 0;
+    }
+
+    /* Hero section adjustments */
+    .hero-section {
+        height: 300px; /* Reduce hero section height */
+        background-size: contain;
+    }
+
+    /* Footer adjustments */
+    footer .panel-1, footer .panel-2, footer .panel-3, footer .panel-4 {
+        font-size: 0.75rem; /* Adjust footer text size */
+    }
+
+    .panel-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .panel-3, .panel-4 {
+        text-align: center;
+    }
+}
+
+/* Base styles */
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    font-size: 24px;
+    color: black;
+}
+
+/* Media queries for responsive design */
+
+/* Tablet screens (max-width: 1024px)  */
+@media only screen and (max-width: 1024px) {
+    .header {
+        font-size: 20px; 
+    }
+}
+
+/* Mobile screens (max-width: 768px)  */
+@media only screen and (max-width: 768px) {
+    .header {
+        font-size: 16px; /
+    }
+
+    .container {
+        padding: 0 15px; 
+    }
+}
