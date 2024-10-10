@@ -1,176 +1,48 @@
-<!DOCTYPE html>
- <html lang="en">
- <head>
+<html lang="en"></html>
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel ="stylesheet" href ="style.css">
- </head>
- <body> 
-     <header>
-      <div class="navbar">
-            <div class="nav-logo border">
-                  <div class="logo1"></div> </div>
-                  <div class="nav-address border">
-                        <P class="add-first">Deliver to</P>
-                        <div class="add-icon">
-                              <i class="fa-solid fa-location-dot"></i>
-                              <P class="add-second">Pakistan</P>
-                        </div>
-              </div>  
-              <div class="nav-search">
-                  <select  class="search-select">
-                        <option >All</option>
-                  </select>
-                        <input placeholder="Search-Amazon" class="search-input">
-                        <div class="search-icon">
-                        <i class="fa-solid fa-magnifying-glass"></i> </div>
-              </div> 
-               <div class="sign-in border">
-                  <p><span>Hello,sign in</span></p>
-                  <p class="nav-sec"> Acount &list</p>
-               </div> 
-               <div class="return border">
-                  <p><span>Returns</span></p>
-                  <p class="nav-sec"> & Orders</p>
-               </div>   
-               <div class="nav-cart border ">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                  cart
-               </div>    
-      </div>
-      <div class="panel">
-      <div class="panel-all">
-            <i class="fa-solid fa-bars"></i>
-            ALL
-      </div>
-      <div class="panel-opps">
-            <p>Today's Deals</p>
-             <p>Customer Service</p>
-             <p>Registry</p>
-             <p>Gift Cards</p>
-             <p>Sell</p>
-      </div>
-      </div>   
-     </header>
-     <div class="hero-section"></div>
-     <div class="shop-section">
-      <div class="box2 box ">
-            <div class="box-content">
-                  <h2>Home décor under $50</h2>
-            <div class="box-image" style="background-image: url('box2.jpg');"></div>
-            <p>see more</p>
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./index.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="userform.java">
+</head>
+<body>
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Registration</h1>
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+                <div class="error"></div>
             </div>
-      </div>
-      <div class="box3 box" >
-           <div class="box-content">
-            <h2>Beauty steals under $25</h2>
-            <div class="box-image" style="background-image: url('box3.jpg');"></div>
-            <p>See more</p>
-           </div>
-      </div>
-      <div class="box4 box " >
-            <div class="box-content">
-                  <h2>Toys under $25</h2>
-            <div class="box-image" style="background-image: url('box4.jpg');"></div>
-            <p>See more</p>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
             </div>
-      </div>
-            <div class="box5 box" >
-                 <div class="box-content">
-                  <h2>Shop activity trackers and smartwatches
-                  </h2>
-                  <div class="box-image"  style="background-image: url('box5.jpg');"></div>
-                  <p>show now</p>
-                 </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password"name="password" type="password">
+                <div class="error"></div>
             </div>
-            <div class="box6 box ">
-                  <div class="box-content">
-                        <h2>Great prices on shoes</h2>
-                  <div class="box-image" style="background-image: url('box6.jpg');"></div>
-                  <p>see more</p>
-                  </div>
+            <div class="input-control">
+                <label for="password2">Password again</label>
+                <input id="password2"name="password2" type="password">
+                <div class="error"></div>
             </div>
-            <div class="box7 box" >
-                 <div class="box-content">
-                  <h2>Player's paradise starts here</h2>
-                  <div class="box-image" style="background-image: url('box7.jpg');"></div>
-                  <p>See more</p>
-                 </div>
-            </div>
-            <div class="box8 box " >
-                  <div class="box-content">
-                        <h2>A whole new way to work</h2>
-                  <div class="box-image" style="background-image: url('box8.jpg');"></div>
-                  <p>See more</p>
-                  </div>
-            </div>
-      <div class="box12 box " >
-                   <div class="box-content">
-                         <h2>Toys under $25</h2>
-                   <div class="box-image" style="background-image: url('box4.jpg');"></div>
-                   <p>See more</p>
-                   </div>
-             </div>
-     </div>
-     <footer>
-      <div class="panel-1">
-            Back to top
-      </div>
-      <div class="panel-2">
-            <ul>
-                  <p>Get to Know Us</p>
-               <a>Careers</a>
-               <a>Blog</a>
-            <a>About Amazon</a>
-           <a>Investor Relations</a>
-            <a>Amazon Devices</a>
-            <a>Amazon Science</a>
-            </ul>
-            <ul>
-                  <p>Make Money with Us</p>
-               <a>Careers</a>
-               <a>Blog</a>
-            <a>About Amazon</a>
-           <a>Investor Relations</a>
-            <a>Amazon Devices</a>
-            <a>Amazon Science</a>
-            </ul>
-            <ul>
-                  <p>Get to Know Us</p>
-               <a>Careers</a>
-               <a>Blog</a>
-            <a>About Amazon</a>
-           <a>Investor Relations</a>
-            <a>Amazon Devices</a>
-            <a>Amazon Science</a>
-            </ul>
-            <ul>
-                  <p>Get to Know Us</p>
-               <a>Careers</a>
-               <a>Blog</a>
-            <a>About Amazon</a>
-           <a>Investor Relations</a>
-            <a>Amazon Devices</a>
-            <a>Amazon Science</a>
-            </ul>
-      </div>
-      <div class="panel-3">
-            <div class="logo">
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
 
-            </div>
-      </div>
-      <div class="panel-4">
-            <div class="page">
-                  <a> Conditions of Use</a>
-                  <a> Privacy Note</a>
-                  <a> Your Ads Privacy Choice</a>
-            </div>
-            <div class="copy-right">
-                  &#169; 1996-2024, Amazon.com, Inc. or its affiliates
-            </div>
-      </div>
-     </footer>
- </body>
- </html>
+
+
+
+
